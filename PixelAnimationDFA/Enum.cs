@@ -29,6 +29,7 @@ namespace PixelAnimationDFA
         PressD,
         ReleaseD,
         PressC,
+        PressZ,
         PressV,
         PressSpace,
         AnimationComplete

@@ -10,7 +10,6 @@ namespace PixelAnimationDFA
         private AnimateKnight animateKnight;
         private IStateMachine stateMachine;
 
-
         public Form1()
         {
             InitializeComponent();
@@ -44,6 +43,9 @@ namespace PixelAnimationDFA
                     break;
 
                 case State.RollingRight:
+
+                    labelInput.Text = "Input: AnimationComplete";
+
                     animateKnight.RollingRight(pictureBoxKnight, () =>
                     {
                         stateMachine.ApplyInput(Input.AnimationComplete);
@@ -51,10 +53,14 @@ namespace PixelAnimationDFA
                     break;
 
                 case State.RollingLeft:
+
+                    labelInput.Text = "Input: AnimationComplete";
+
                     animateKnight.RollingLeft(pictureBoxKnight, () =>
                     {
                         stateMachine.ApplyInput(Input.AnimationComplete);
                     });
+
                     break;
 
                 case State.CrouchRight:
@@ -74,9 +80,17 @@ namespace PixelAnimationDFA
                     break;
 
                 case State.AttackRight:
+                    animateKnight.AttackRight(pictureBoxKnight, () =>
+                    {
+                        stateMachine.ApplyInput(Input.AnimationComplete);
+                    });
                     break;
 
                 case State.AttackLeft:
+                    animateKnight.AttackLeft(pictureBoxKnight, () =>
+                    {
+                        stateMachine.ApplyInput(Input.AnimationComplete);
+                    });
                     break;
             }
 
@@ -88,19 +102,55 @@ namespace PixelAnimationDFA
 
             if (e.KeyCode == Keys.A)
             {
-                label1.Text = "Input A";
+                labelInput.Text = "Input: Press A";
                 stateMachine.ApplyInput(Input.PressA);
             }
-            if (e.KeyCode == Keys.D) stateMachine.ApplyInput(Input.PressD);
-            if (e.KeyCode == Keys.C) stateMachine.ApplyInput(Input.PressC);
-            if (e.KeyCode == Keys.V) stateMachine.ApplyInput(Input.PressV);
-            if (e.KeyCode == Keys.Space) stateMachine.ApplyInput(Input.PressSpace);
+
+            if (e.KeyCode == Keys.D)
+            {   
+                labelInput.Text = "Input: Press D";
+                stateMachine.ApplyInput(Input.PressD);
+            }
+
+            if (e.KeyCode == Keys.C) 
+            {
+                labelInput.Text = "Input: Press C";
+                stateMachine.ApplyInput(Input.PressC); 
+            }
+
+            if (e.KeyCode == Keys.Z)
+            {
+                labelInput.Text = "Input: Press Z";
+                stateMachine.ApplyInput(Input.PressZ);
+            }
+
+            if (e.KeyCode == Keys.V)
+            {   
+                labelInput.Text = "Input: Press V";
+                stateMachine.ApplyInput(Input.PressV);
+            }
+
+            if (e.KeyCode == Keys.Space)
+            {
+                labelInput.Text = "Input: Press Space";
+                stateMachine.ApplyInput(Input.PressSpace);
+            }
+
         }
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.A) stateMachine.ApplyInput(Input.ReleaseA);
-            if (e.KeyCode == Keys.D) stateMachine.ApplyInput(Input.ReleaseD);
+            if (e.KeyCode == Keys.A)
+            {   
+                labelInput.Text = "Input: Release A";
+                stateMachine.ApplyInput(Input.ReleaseA);
+            }
+
+            if (e.KeyCode == Keys.D)
+            {
+                labelInput.Text = "Input: Release D";
+                stateMachine.ApplyInput(Input.ReleaseD);
+            }
         }
     }
 }
