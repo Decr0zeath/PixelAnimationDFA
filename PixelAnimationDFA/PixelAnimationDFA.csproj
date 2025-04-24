@@ -52,11 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnimateKnight.cs" />
-    <Compile Include="Enum.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Enum.Context.tt</DependentUpon>
-    </Compile>
     <Compile Include="Enum.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -192,10 +187,43 @@
     <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__RunMirrored.gif" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Enum.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Enum.Context.cs</LastGenOutput>
-    </Content>
+    <None Include="PixelAssets\Background image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PixelAssets\__AttackLeft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PixelAssets\__AttackRight.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PixelAssets\__CrouchLeft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PixelAssets\__CrouchRight.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PixelAssets\__CrouchWalkLeft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PixelAssets\__CrouchWalkRight.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PixelAssets\__IdleLeft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PixelAssets\__IdleRight.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PixelAssets\__RollLeft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PixelAssets\__RollRight.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PixelAssets\__RunLeft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PixelAssets\__RunRight.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -63,9 +63,9 @@ namespace PixelAnimationDFA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap @__Attack {
+        internal static System.Drawing.Bitmap @__AttackLeft {
             get {
-                object obj = ResourceManager.GetObject("__Attack", resourceCulture);
+                object obj = ResourceManager.GetObject("__AttackLeft", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace PixelAnimationDFA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap @__Attack2 {
+        internal static System.Drawing.Bitmap @__AttackRight {
             get {
-                object obj = ResourceManager.GetObject("__Attack2", resourceCulture);
+                object obj = ResourceManager.GetObject("__AttackRight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace PixelAnimationDFA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap @__Attack2NoMovement {
+        internal static System.Drawing.Bitmap @__CrouchLeft {
             get {
-                object obj = ResourceManager.GetObject("__Attack2NoMovement", resourceCulture);
+                object obj = ResourceManager.GetObject("__CrouchLeft", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace PixelAnimationDFA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap @__AttackCombo2hit {
+        internal static System.Drawing.Bitmap @__CrouchRight {
             get {
-                object obj = ResourceManager.GetObject("__AttackCombo2hit", resourceCulture);
+                object obj = ResourceManager.GetObject("__CrouchRight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace PixelAnimationDFA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap @__AttackComboNoMovement {
+        internal static System.Drawing.Bitmap @__CrouchWalkLeft {
             get {
-                object obj = ResourceManager.GetObject("__AttackComboNoMovement", resourceCulture);
+                object obj = ResourceManager.GetObject("__CrouchWalkLeft", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace PixelAnimationDFA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap @__AttackNoMovement {
+        internal static System.Drawing.Bitmap @__CrouchWalkRight {
             get {
-                object obj = ResourceManager.GetObject("__AttackNoMovement", resourceCulture);
+                object obj = ResourceManager.GetObject("__CrouchWalkRight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace PixelAnimationDFA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap @__Crouch {
+        internal static System.Drawing.Bitmap @__IdleLeft {
             get {
-                object obj = ResourceManager.GetObject("__Crouch", resourceCulture);
+                object obj = ResourceManager.GetObject("__IdleLeft", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace PixelAnimationDFA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap @__CrouchAll {
+        internal static System.Drawing.Bitmap @__IdleRight {
             get {
-                object obj = ResourceManager.GetObject("__CrouchAll", resourceCulture);
+                object obj = ResourceManager.GetObject("__IdleRight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace PixelAnimationDFA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap @__CrouchAttack {
+        internal static System.Drawing.Bitmap @__RollLeft {
             get {
-                object obj = ResourceManager.GetObject("__CrouchAttack", resourceCulture);
+                object obj = ResourceManager.GetObject("__RollLeft", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace PixelAnimationDFA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap @__CrouchTransition {
+        internal static System.Drawing.Bitmap @__RollRight {
             get {
-                object obj = ResourceManager.GetObject("__CrouchTransition", resourceCulture);
+                object obj = ResourceManager.GetObject("__RollRight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +163,9 @@ namespace PixelAnimationDFA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap @__CrouchWalk {
+        internal static System.Drawing.Bitmap @__RunLeft {
             get {
-                object obj = ResourceManager.GetObject("__CrouchWalk", resourceCulture);
+                object obj = ResourceManager.GetObject("__RunLeft", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,199 +173,9 @@ namespace PixelAnimationDFA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap @__Dash {
+        internal static System.Drawing.Bitmap @__RunRight {
             get {
-                object obj = ResourceManager.GetObject("__Dash", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__Death {
-            get {
-                object obj = ResourceManager.GetObject("__Death", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__DeathNoMovement {
-            get {
-                object obj = ResourceManager.GetObject("__DeathNoMovement", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__Fall {
-            get {
-                object obj = ResourceManager.GetObject("__Fall", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__Hit {
-            get {
-                object obj = ResourceManager.GetObject("__Hit", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__Idle {
-            get {
-                object obj = ResourceManager.GetObject("__Idle", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__Jump {
-            get {
-                object obj = ResourceManager.GetObject("__Jump", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__JumpFallInbetween {
-            get {
-                object obj = ResourceManager.GetObject("__JumpFallInbetween", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__Roll {
-            get {
-                object obj = ResourceManager.GetObject("__Roll", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__Run {
-            get {
-                object obj = ResourceManager.GetObject("__Run", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__RunMirrored {
-            get {
-                object obj = ResourceManager.GetObject("__RunMirrored", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__Slide {
-            get {
-                object obj = ResourceManager.GetObject("__Slide", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__SlideAll {
-            get {
-                object obj = ResourceManager.GetObject("__SlideAll", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__SlideTransitionEnd {
-            get {
-                object obj = ResourceManager.GetObject("__SlideTransitionEnd", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__SlideTransitionStart {
-            get {
-                object obj = ResourceManager.GetObject("__SlideTransitionStart", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__TurnAround {
-            get {
-                object obj = ResourceManager.GetObject("__TurnAround", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__WallClimb {
-            get {
-                object obj = ResourceManager.GetObject("__WallClimb", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__WallClimbNoMovement {
-            get {
-                object obj = ResourceManager.GetObject("__WallClimbNoMovement", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__WallHang {
-            get {
-                object obj = ResourceManager.GetObject("__WallHang", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap @__WallSlide {
-            get {
-                object obj = ResourceManager.GetObject("__WallSlide", resourceCulture);
+                object obj = ResourceManager.GetObject("__RunRight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -376,6 +186,16 @@ namespace PixelAnimationDFA.Properties {
         internal static System.Drawing.Bitmap Background_image {
             get {
                 object obj = ResourceManager.GetObject("Background image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Background_image1 {
+            get {
+                object obj = ResourceManager.GetObject("Background image1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

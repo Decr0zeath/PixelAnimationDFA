@@ -8,10 +8,18 @@ namespace PixelAnimationDFA
 {
     public enum State
     {
-        Idle,
-        RunningLeft,
+        IdleRight,
+        IdleLeft,
         RunningRight,
-        RollingRight
+        RunningLeft,
+        RollingRight,
+        RollingLeft,
+        CrouchRight,
+        CrouchLeft,
+        CrouchWalkRight,
+        CrouchWalkLeft,
+        AttackRight,
+        AttackLeft
     }
 
     public enum Input
@@ -20,6 +28,8 @@ namespace PixelAnimationDFA
         ReleaseA,
         PressD,
         ReleaseD,
+        PressC,
+        PressV,
         PressSpace,
         RollComplete
     }

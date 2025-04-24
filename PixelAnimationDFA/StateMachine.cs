@@ -13,19 +13,60 @@ namespace PixelAnimationDFA
 
         public StateMachine(Action<State> onStateChangedCallback)
         {
-            CurrentState = State.Idle;
+            CurrentState = State.IdleRight;
             onStateChanged = onStateChangedCallback;
 
             transitionTable = new Dictionary<(State, Input), State>
             {
-                {(State.Idle, Input.PressA), State.RunningLeft},
-                {(State.Idle, Input.PressD), State.RunningRight},
-                {(State.Idle, Input.PressSpace), State.RollingRight},
-                {(State.RunningLeft, Input.ReleaseA), State.Idle},
-                {(State.RunningRight, Input.ReleaseD), State.Idle},
-                {(State.RunningLeft, Input.PressSpace), State.RollingRight},
+                {(State.IdleRight, Input.PressA), State.RunningLeft},
+                //{(State.IdleRight, Input.ReleaseA), State.IdleLeft},
+                {(State.IdleRight, Input.PressD), State.RunningRight},
+                //{(State.IdleRight, Input.ReleaseD), State.IdleRight},
+                {(State.IdleRight, Input.PressC), State.CrouchLeft},
+                {(State.IdleRight, Input.PressV), State.AttackRight},
+                {(State.IdleRight, Input.PressSpace), State.RollingRight},
+                //{(State.IdleRight, Input.RollComplete), State.IdleRight},
+
+              
+                {(State.IdleLeft, Input.PressA), State.RunningLeft},
+                //{(State.IdleLeft, Input.ReleaseA), State.IdleLeft},
+                {(State.IdleLeft, Input.PressD), State.RunningRight},
+                //{(State.IdleLeft, Input.ReleaseD), State.IdleRight},
+                {(State.IdleLeft, Input.PressC), State.CrouchLeft},
+                {(State.IdleLeft, Input.PressV), State.AttackLeft},
+                {(State.IdleLeft, Input.PressSpace), State.RollingLeft},
+                //{(State.IdleLeft, Input.RollComplete), State.IdleLeft},
+
+                                //PressA,
+                //ReleaseA,
+                //PressD,
+                //ReleaseD,
+                //PressC,
+                //PressV,
+                //PressSpace,
+                //RollComplete
+
+                {(State.RunningLeft, Input.PressA), State.RunningLeft},
+                {(State.RunningLeft, Input.ReleaseA), State.IdleLeft},
+                {(State.RunningLeft, Input.PressD), State.RunningRight},
+                {(State.RunningLeft, Input.ReleaseD), State.IdleRight},
+                {(State.RunningLeft, Input.PressC), State.CrouchLeft},
+                {(State.RunningLeft, Input.PressV), State.AttackLeft},
+                {(State.RunningLeft, Input.PressSpace), State.RollingLeft},
+                {(State.RunningLeft, Input.RollComplete), State.IdleLeft},
+
+
+
+                {(State.RunningRight, Input.ReleaseD), State.IdleRight},
                 {(State.RunningRight, Input.PressSpace), State.RollingRight},
-                {(State.RollingRight, Input.RollComplete), State.Idle}
+                {(State.RunningRight, Input.PressSpace), State.RollingRight},
+                {(State.RunningRight, Input.PressSpace), State.RollingRight},
+                {(State.RunningRight, Input.PressSpace), State.RollingRight},
+                {(State.RunningRight, Input.PressSpace), State.RollingRight},
+                {(State.RunningRight, Input.PressSpace), State.RollingRight},
+                {(State.RunningRight, Input.PressSpace), State.RollingRight},
+
+                {(State.RollingRight, Input.RollComplete), State.IdleRight}
             };
         }
 

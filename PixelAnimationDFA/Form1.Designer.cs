@@ -28,15 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBoxKnight = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKnight)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxKnight
             // 
-            this.pictureBoxKnight.Location = new System.Drawing.Point(563, 375);
+            this.pictureBoxKnight.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxKnight.Image = global::PixelAnimationDFA.Properties.Resources.@__IdleRight;
+            this.pictureBoxKnight.Location = new System.Drawing.Point(368, 248);
             this.pictureBoxKnight.Name = "pictureBoxKnight";
-            this.pictureBoxKnight.Size = new System.Drawing.Size(100, 50);
+            this.pictureBoxKnight.Size = new System.Drawing.Size(480, 320);
+            this.pictureBoxKnight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxKnight.TabIndex = 0;
             this.pictureBoxKnight.TabStop = false;
             // 
@@ -44,6 +48,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1130, 637);
             this.ControlBox = false;

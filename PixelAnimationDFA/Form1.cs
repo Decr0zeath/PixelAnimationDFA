@@ -25,62 +25,72 @@ namespace PixelAnimationDFA
         {
             switch (state)
             {
-                case State.Idle:
-                    animateKnight.IdleAnimation(pictureBoxKnight);
+                case State.IdleRight:
+                    animateKnight.IdleRight(pictureBoxKnight);
                     break;
-                case State.RunningLeft:
-                    animateKnight.RunToLeft(pictureBoxKnight);
+                
+                case State.IdleLeft:
+                    animateKnight.IdleLeft(pictureBoxKnight);
                     break;
+
                 case State.RunningRight:
-                    animateKnight.RunToRight(pictureBoxKnight);
+                    animateKnight.RunningRight(pictureBoxKnight);
                     break;
+
+                case State.RunningLeft:
+                    animateKnight.RunningLeft(pictureBoxKnight);
+                    break;
+
                 case State.RollingRight:
-                    animateKnight.RollingToRight(pictureBoxKnight, () =>
+                    animateKnight.RollingRight(pictureBoxKnight, () =>
                     {
                         stateMachine.ApplyInput(Input.RollComplete);
                     });
                     break;
-                case State.RollingLeft;
+
+                case State.RollingLeft:
+                    animateKnight.RollingLeft(pictureBoxKnight, () =>
+                    {
+                        stateMachine.ApplyInput(Input.RollComplete);
+                    });
                     break;
-                case 
+
+                case State.CrouchRight:
+                    break;
+
+                case State.CrouchLeft:
+                    break;
+
+                case State.CrouchWalkRight:
+                    break;
+
+                case State.CrouchWalkLeft:
+                    break;
+
+                case State.AttackRight:
+                    break;
+
+                case State.AttackLeft:
+                    break;
             }
+
         }
 
-        //bool isRunningLeft = false;
-        //bool isRunningRight = false;
-        //bool isRolling = false;
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.X) Application.Exit();
 
             if (e.KeyCode == Keys.A) stateMachine.ApplyInput(Input.PressA);
             if (e.KeyCode == Keys.D) stateMachine.ApplyInput(Input.PressD);
+            if (e.KeyCode == Keys.C) stateMachine.ApplyInput(Input.PressC);
+            if (e.KeyCode == Keys.V) stateMachine.ApplyInput(Input.PressV);
             if (e.KeyCode == Keys.Space) stateMachine.ApplyInput(Input.PressSpace);
         }
-
-        //private void OnRollCompleted()
-        //{
-        //    isRolling = false;
-        //    animateKnight.IdleAnimation(pictureBoxKnight);
-        //}
-
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.A) stateMachine.ApplyInput(Input.ReleaseA);
             if (e.KeyCode == Keys.D) stateMachine.ApplyInput(Input.ReleaseD);
         }
-
-        // Animation frame update method
-        private void OnFrameChanged(object sender, EventArgs e)
-        {
-            this.Invoke((MethodInvoker)(() =>
-            {
-                ImageAnimator.UpdateFrames(pictureBoxKnight.Image);
-                pictureBoxKnight.Invalidate(); // Forces the PictureBox to repaint
-            }));
-        }
-
-
     }
 }
