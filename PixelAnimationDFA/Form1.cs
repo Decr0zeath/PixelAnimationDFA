@@ -2,12 +2,14 @@
 using System.Drawing;
 using System.Windows.Forms;
 
+
 namespace PixelAnimationDFA
 {
     public partial class Form1 : Form
     {
         private AnimateKnight animateKnight;
         private IStateMachine stateMachine;
+
 
         public Form1()
         {
@@ -44,27 +46,31 @@ namespace PixelAnimationDFA
                 case State.RollingRight:
                     animateKnight.RollingRight(pictureBoxKnight, () =>
                     {
-                        stateMachine.ApplyInput(Input.RollComplete);
+                        stateMachine.ApplyInput(Input.AnimationComplete);
                     });
                     break;
 
                 case State.RollingLeft:
                     animateKnight.RollingLeft(pictureBoxKnight, () =>
                     {
-                        stateMachine.ApplyInput(Input.RollComplete);
+                        stateMachine.ApplyInput(Input.AnimationComplete);
                     });
                     break;
 
                 case State.CrouchRight:
+                    animateKnight.CrouchRight(pictureBoxKnight);
                     break;
 
                 case State.CrouchLeft:
+                    animateKnight.CrouchLeft(pictureBoxKnight);
                     break;
 
                 case State.CrouchWalkRight:
+                    animateKnight.CrouchWalkRight(pictureBoxKnight);
                     break;
 
                 case State.CrouchWalkLeft:
+                    animateKnight.CrouchWalkLeft(pictureBoxKnight);
                     break;
 
                 case State.AttackRight:
@@ -80,7 +86,11 @@ namespace PixelAnimationDFA
         {
             if (e.KeyCode == Keys.X) Application.Exit();
 
-            if (e.KeyCode == Keys.A) stateMachine.ApplyInput(Input.PressA);
+            if (e.KeyCode == Keys.A)
+            {
+                label1.Text = "Input A";
+                stateMachine.ApplyInput(Input.PressA);
+            }
             if (e.KeyCode == Keys.D) stateMachine.ApplyInput(Input.PressD);
             if (e.KeyCode == Keys.C) stateMachine.ApplyInput(Input.PressC);
             if (e.KeyCode == Keys.V) stateMachine.ApplyInput(Input.PressV);

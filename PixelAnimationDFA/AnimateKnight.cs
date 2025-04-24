@@ -8,31 +8,49 @@ namespace PixelAnimationDFA
     {
         public void IdleRight(PictureBox characterKnight)
         {
-            characterKnight.Image = null;
+            //characterKnight.Image = null;
             characterKnight.Image = Properties.Resources.__IdleRight;
+            ImageAnimator.StopAnimate(characterKnight.Image, OnFrameChanged);
         }
 
         public void IdleLeft(PictureBox characterKnight)
         {
-            characterKnight.Image = null;
+            //characterKnight.Image = null;
             characterKnight.Image = Properties.Resources.__IdleLeft;
+            ImageAnimator.StopAnimate(characterKnight.Image, OnFrameChanged);
         }
 
-        public void CrouchRight(PictureBox characterKnight) { }
-        public void CrouchLeft(PictureBox characterKnight) { }
-        public void CrouchWalkRight(PictureBox characterKnight) { }
-        public void CrouchWalkLeft(PictureBox characterKnight) { }
+        public void CrouchRight(PictureBox characterKnight) {
+            //characterKnight.Image = null;
+            characterKnight.Image = Properties.Resources.__CrouchRight;
+            ImageAnimator.StopAnimate(characterKnight.Image, OnFrameChanged);
+        }
+        public void CrouchLeft(PictureBox characterKnight) {
+            //characterKnight.Image = null;
+            characterKnight.Image = Properties.Resources.__CrouchLeft;
+            ImageAnimator.StopAnimate(characterKnight.Image, OnFrameChanged);
+        }
+        public void CrouchWalkRight(PictureBox characterKnight) {
+            //characterKnight.Image = null;
+            characterKnight.Image = Properties.Resources.__CrouchWalkRight;
+            ImageAnimator.StopAnimate(characterKnight.Image, OnFrameChanged);
+        }
+        public void CrouchWalkLeft(PictureBox characterKnight) {
+            //characterKnight.Image = null;
+            characterKnight.Image = Properties.Resources.__CrouchWalkLeft;
+            ImageAnimator.StopAnimate(characterKnight.Image, OnFrameChanged);
+        }
 
         public void RunningRight(PictureBox characterKnight)
         {
-            characterKnight.Image = null;
+            //characterKnight.Image = null;
             characterKnight.Image = (Image)Properties.Resources.__RunRight.Clone();
             ImageAnimator.Animate(characterKnight.Image, OnFrameChanged);
         }
 
         public void RunningLeft(PictureBox characterKnight)
         {
-            characterKnight.Image = null;
+            //characterKnight.Image = null;
             characterKnight.Image = (Image)Properties.Resources.__RunLeft.Clone();
             ImageAnimator.Animate(characterKnight.Image, OnFrameChanged);
         }
@@ -51,7 +69,7 @@ namespace PixelAnimationDFA
 
             // Estimate roll duration (e.g., 600ms). Use the length of the GIF if you can measure it.
             Timer timer = new Timer();
-            timer.Interval = 600; // Set this to the actual duration of your roll GIF
+            timer.Interval = 700; // Set this to the actual duration of your roll GIF
             timer.Tick += (s, e) =>
             {
                 timer.Stop();
@@ -75,7 +93,7 @@ namespace PixelAnimationDFA
 
             // Estimate roll duration (e.g., 600ms). Use the length of the GIF if you can measure it.
             Timer timer = new Timer();
-            timer.Interval = 600; // Set this to the actual duration of your roll GIF
+            timer.Interval = 700; // Set this to the actual duration of your roll GIF
             timer.Tick += (s, e) =>
             {
                 timer.Stop();

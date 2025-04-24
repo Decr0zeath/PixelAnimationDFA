@@ -31,6 +31,6 @@ namespace PixelAnimationDFA
         PressC,
         PressV,
         PressSpace,
-        RollComplete
+        AnimationComplete
     }
 }
