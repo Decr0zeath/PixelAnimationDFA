@@ -26,11 +26,28 @@ namespace PixelAnimationDFA
             ImageAnimator.Animate(characterKnight.Image, OnFrameChanged);
         }
 
-        public void RollingToRight(PictureBox characterKnight)
+        public void RollingToRight(PictureBox characterKnight, Action onRollComplete)
         {
             characterKnight.Image = null;
-            characterKnight.Image = (Image)Properties.Resources.__Roll.Clone();
-            ImageAnimator.Animate(characterKnight.Image, OnFrameChanged);
+            Image rollImage = (Image)Properties.Resources.__Roll.Clone(); // Assuming you have a __Roll GIF
+            characterKnight.Image = rollImage;
+
+            ImageAnimator.Animate(rollImage, (sender, e) =>
+            {
+                ImageAnimator.UpdateFrames(rollImage);
+                characterKnight.Invalidate();
+            });
+
+            // Estimate roll duration (e.g., 600ms). Use the length of the GIF if you can measure it.
+            Timer timer = new Timer();
+            timer.Interval = 600; // Set this to the actual duration of your roll GIF
+            timer.Tick += (s, e) =>
+            {
+                timer.Stop();
+                timer.Dispose();
+                onRollComplete?.Invoke();
+            };
+            timer.Start();
         }
 
 
