@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimateKnight.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +66,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +80,102 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Attack.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Attack2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Attack2NoMovement.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__AttackCombo2hit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__AttackComboNoMovement.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__AttackNoMovement.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Crouch.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__CrouchAll.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__CrouchAttack.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__CrouchTransition.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__CrouchWalk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Dash.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Death.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__DeathNoMovement.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Fall.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Hit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Idle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Jump.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__JumpFallInbetween.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Roll.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Run.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Slide.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__SlideAll.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__SlideTransitionEnd.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__SlideTransitionStart.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__TurnAround.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__WallClimb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__WallClimbNoMovement.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__WallHang.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__WallSlide.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PixelBackground\Background image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__RunMirrored.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

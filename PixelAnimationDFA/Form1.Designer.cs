@@ -28,34 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBoxKnight = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKnight)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBoxKnight
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(555, 262);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 120);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxKnight.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxKnight.Image = global::PixelAnimationDFA.Properties.Resources.@__Idle;
+            this.pictureBoxKnight.Location = new System.Drawing.Point(399, 151);
+            this.pictureBoxKnight.Name = "pictureBoxKnight";
+            this.pictureBoxKnight.Size = new System.Drawing.Size(480, 320);
+            this.pictureBoxKnight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxKnight.TabIndex = 0;
+            this.pictureBoxKnight.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::PixelAnimationDFA.Properties.Resources.Background_image;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1130, 637);
-            this.Controls.Add(this.pictureBox1);
+            this.ControlBox = false;
+            this.Controls.Add(this.pictureBoxKnight);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKnight)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxKnight;
     }
 }
 
