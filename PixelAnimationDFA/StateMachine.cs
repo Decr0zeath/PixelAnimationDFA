@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using static System.Windows.Forms.AxHost;
 
 namespace PixelAnimationDFA
 {
@@ -91,4 +90,3 @@ namespace PixelAnimationDFA
         }
     }
 }
-
