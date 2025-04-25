@@ -225,5 +225,11 @@
   <ItemGroup>
     <None Include="PixelAssets\__RunRight.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="PixelAssets\keyboard layout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PixelAssets\keyboard layout_orange.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
