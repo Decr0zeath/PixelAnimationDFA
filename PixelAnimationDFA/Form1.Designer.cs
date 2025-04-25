@@ -143,13 +143,13 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label2.Font = new System.Drawing.Font("Pixel Knight Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Pixel Knight Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(86)))), ((int)(((byte)(2)))));
-            this.label2.Location = new System.Drawing.Point(0, 15);
+            this.label2.Location = new System.Drawing.Point(0, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(278, 11);
+            this.label2.Size = new System.Drawing.Size(363, 16);
             this.label2.TabIndex = 6;
-            this.label2.Text = "  CREATED BY: ENGR. VIOLDAN E. BAYOCOT";
+            this.label2.Text = "  CREATED BY: VIOLDAN E. BAYOCOT";
             // 
             // panel2
             // 
