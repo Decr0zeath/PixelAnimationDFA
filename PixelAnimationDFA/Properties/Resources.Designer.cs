@@ -203,6 +203,16 @@ namespace PixelAnimationDFA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Gothic_Ruins_in_Overgrown_Landscape {
+            get {
+                object obj = ResourceManager.GetObject("Gothic Ruins in Overgrown Landscape", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap keyboard_layout {
             get {
                 object obj = ResourceManager.GetObject("keyboard layout", resourceCulture);

@@ -231,5 +231,8 @@
   <ItemGroup>
     <None Include="PixelAssets\keyboard layout_orange.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="PixelAssets\Gothic Ruins in Overgrown Landscape.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
