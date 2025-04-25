@@ -76,7 +76,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(86)))), ((int)(((byte)(2)))));
             this.label1.Location = new System.Drawing.Point(401, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 133);
+            this.label1.Size = new System.Drawing.Size(171, 133);
             this.label1.TabIndex = 2;
             this.label1.Text = "A - Move Left\r\nD - Move Right\r\nC - Crouch\r\nZ - Stand\r\nV - Attack\r\nSpace - Roll\r\n0" +
     " - Exit";
