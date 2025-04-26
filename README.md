@@ -4,12 +4,12 @@
 [![Made with C#](https://img.shields.io/badge/Made%20with-C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 [![Platform](https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/en-us/windows)
 [![License: Educational](https://img.shields.io/badge/License-Educational-lightgrey?style=for-the-badge)](#license)
-![DFA Simulation](https://img.shields.io/badge/DFA-Simulation-%23FFA500?style=for-the-badge)
+![StateMachine Simulation](https://img.shields.io/badge/StateMachine-Simulation-%23FFA500?style=for-the-badge)
 
 ---
 
-A **C# Windows Forms** project simulating a knight’s animation using a **Deterministic Finite Automaton (DFA)**.  
-An interactive experience combining **game development** and **theoretical computer science** — all in real time.
+A **C# Windows Forms** project simulating a knight’s animation using a **State Machine**.  
+An interactive experience combining **game development** and **theory of computation** — all in real time.
 
 ---
 
@@ -29,15 +29,15 @@ An interactive experience combining **game development** and **theoretical compu
 ![Knight Animation Preview](assets/knight-preview.gif)
 
 ### State Diagram View
-![State Diagram Preview](assets/state-diagram-preview.gif)
+![State Diagram Preview](assets/NFA - State Diagram (Dark Mode).png)
 
-> *Tip: Replace these placeholders with your actual previews for best effect!*
+> *IdleRight is the start state*
 
 ---
 
 ## 📂 Project Structure
 
-\`\`\`
+```
 PixelAnimationDFA/
 ├── Animations/
 │   ├── AnimateKnight.cs             # Knight frame animations
@@ -57,7 +57,7 @@ PixelAnimationDFA/
 ├── Assets/                           # Sprites, diagrams, and resources
 ├── Program.cs                        # Application entry point
 └── README.md                         # This documentation
-\`\`\`
+```
 
 ---
 

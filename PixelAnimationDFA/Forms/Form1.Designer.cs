@@ -263,7 +263,7 @@
             // pictureBoxStateDiag
             // 
             this.pictureBoxStateDiag.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxStateDiag.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxStateDiag.Image")));
+            this.pictureBoxStateDiag.Image = global::PixelAnimationDFA.Properties.Resources.NFA___State_Diagram__Light_Mode_;
             this.pictureBoxStateDiag.Location = new System.Drawing.Point(166, 87);
             this.pictureBoxStateDiag.Name = "pictureBoxStateDiag";
             this.pictureBoxStateDiag.Size = new System.Drawing.Size(573, 381);
