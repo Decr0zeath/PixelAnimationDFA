@@ -51,15 +51,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AnimateKnight.cs" />
-    <Compile Include="Forms\Enum.cs" />
+    <Compile Include="Animation\AnimateKnight.cs" />
+    <Compile Include="Animation\IAnimationController.cs" />
+    <Compile Include="Models\Input.cs" />
+    <Compile Include="InputHandling\InputHandler.cs" />
+    <Compile Include="Animation\KnightAnimationController.cs" />
+    <Compile Include="Models\State.cs" />
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="IStateMachine.cs" />
+    <Compile Include="StateMachine\IStateMachine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -67,7 +71,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="StateMachine.cs" />
+    <Compile Include="StateMachine\StateMachine.cs" />
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,102 +93,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Attack.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Attack2.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Attack2NoMovement.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__AttackCombo2hit.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__AttackComboNoMovement.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__AttackNoMovement.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Crouch.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__CrouchAll.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__CrouchAttack.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__CrouchTransition.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__CrouchWalk.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Dash.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Death.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__DeathNoMovement.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Fall.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Hit.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Idle.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Jump.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__JumpFallInbetween.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Roll.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Run.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__Slide.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__SlideAll.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__SlideTransitionEnd.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__SlideTransitionStart.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__TurnAround.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__WallClimb.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__WallClimbNoMovement.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__WallHang.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__WallSlide.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="PixelBackground\Background image.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FreeKnight_v1\Colour1\Outline\120x80_gifs\__RunMirrored.gif" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PixelAssets\Background image.png" />
