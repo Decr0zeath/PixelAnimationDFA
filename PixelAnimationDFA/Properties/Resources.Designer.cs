@@ -223,9 +223,9 @@ namespace PixelAnimationDFA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap state_diagram_light {
+        internal static System.Drawing.Bitmap state_diagram_lightmode {
             get {
-                object obj = ResourceManager.GetObject("state-diagram-light", resourceCulture);
+                object obj = ResourceManager.GetObject("state-diagram-lightmode", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

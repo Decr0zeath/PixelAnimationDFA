@@ -157,5 +157,8 @@
   <ItemGroup>
     <None Include="Assets\PixelAssets\state-diagram-light.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\PixelAssets\state-diagram-lightmode.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
