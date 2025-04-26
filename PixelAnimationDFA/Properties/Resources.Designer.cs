@@ -213,9 +213,19 @@ namespace PixelAnimationDFA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NFA___State_Diagram__Light_Mode_ {
+        internal static System.Drawing.Bitmap state_diagram_dark {
             get {
-                object obj = ResourceManager.GetObject("NFA - State Diagram (Light Mode)", resourceCulture);
+                object obj = ResourceManager.GetObject("state-diagram-dark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap state_diagram_light {
+            get {
+                object obj = ResourceManager.GetObject("state-diagram-light", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
