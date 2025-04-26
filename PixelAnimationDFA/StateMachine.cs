@@ -49,17 +49,13 @@ namespace PixelAnimationDFA
                 {(State.RollingLeft, Input.AnimationComplete), State.IdleLeft},
                 //------------------------- CROUCH RIGHT STATE ------------------------------
                 {(State.CrouchRight, Input.PressA), State.CrouchWalkLeft},
-                //{(State.CrouchRight, Input.ReleaseA), State.CrouchLeft},
                 {(State.CrouchRight, Input.PressD), State.CrouchWalkRight},
-                //{(State.CrouchRight, Input.ReleaseD), State.CrouchRight},
                 {(State.CrouchRight, Input.PressZ), State.IdleRight},
                 {(State.CrouchRight, Input.PressV), State.AttackRight},
                 {(State.CrouchRight, Input.PressSpace), State.RollingRight},
                 //------------------------- CROUCH LEFT STATE -------------------------------
                 {(State.CrouchLeft, Input.PressA), State.CrouchWalkLeft},
-                //{(State.CrouchLeft, Input.ReleaseA), State.CrouchLeft},
                 {(State.CrouchLeft, Input.PressD), State.CrouchWalkRight},
-                //{(State.CrouchLeft, Input.ReleaseD), State.CrouchRight},
                 {(State.CrouchLeft, Input.PressZ), State.IdleLeft},
                 {(State.CrouchLeft, Input.PressV), State.AttackLeft},
                 {(State.CrouchLeft, Input.PressSpace), State.RollingLeft},
