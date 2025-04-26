@@ -60,7 +60,7 @@
             // pictureBoxKnight
             // 
             this.pictureBoxKnight.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxKnight.Image = global::PixelAnimationDFA.Properties.Resources.@__IdleRight;
+            this.pictureBoxKnight.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxKnight.Image")));
             this.pictureBoxKnight.Location = new System.Drawing.Point(276, 202);
             this.pictureBoxKnight.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxKnight.Name = "pictureBoxKnight";
@@ -99,7 +99,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::PixelAnimationDFA.Properties.Resources.keyboard_layout_orange;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(2, 2);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
@@ -277,7 +277,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::PixelAnimationDFA.Properties.Resources.Background_image;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(886, 531);
             this.ControlBox = false;
