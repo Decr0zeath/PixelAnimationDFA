@@ -1,5 +1,5 @@
 
-# Pixel Animation DFA ⚔️🛡️
+# Pixel Animation using State Machines ⚔️🛡
 
 [![Made with C#](https://img.shields.io/badge/Made%20with-C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 [![Platform](https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/en-us/windows)
@@ -26,7 +26,7 @@ An interactive experience combining **game development** and **theory of computa
 ## 📸 Preview
 
 ### Knight Animation
-![Knight Animation Preview](assets/knight-preview.gif)
+![Knight Animation Preview](PixelAnimationDFA/Assets/PixelAssets/knight-animation-preview.gif)
 
 ### State Diagram View
 ![State Diagram Preview](PixelAnimationDFA/Assets/PixelAssets/state-diagram-dark.png)
