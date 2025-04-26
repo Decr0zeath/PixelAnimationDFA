@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Drawing;
-using System.Drawing.Drawing2D;
 using System;
-
 
 namespace PixelAnimationDFA
 {
@@ -47,12 +45,13 @@ namespace PixelAnimationDFA
             int formWidth = (int)(screenWidth * 0.75);
             int formHeight = (int)(screenHeight * 0.75);
             this.Size = new Size(formWidth, formHeight);
+            this.StartPosition = FormStartPosition.CenterScreen;
 
-
-            this.StartPosition = FormStartPosition.CenterScreen; // optional, centers it
-            this.BackColor = Color.Black;
-
+            // Repositioning and Resizing of Picture Boxes
             repositionPictureBoxKnight();
+
+            resizePictureBoxStateDiag();
+            repositionPictureBoxStateDiag();
 
             // Initially sets the labels to a specific text
             labelInput.Text = "Input: None";
@@ -82,7 +81,24 @@ namespace PixelAnimationDFA
             pictureBoxKnight.Location = new Point(x, y);
         }
 
+        // Dynamically Positioning the PictureBoxStateDiag
+        private void repositionPictureBoxStateDiag()
+        {
+            int x = (this.ClientSize.Width - pictureBoxStateDiag.Width) / 2;
+            int y = (this.ClientSize.Height - pictureBoxStateDiag.Height) / 2;
 
+            pictureBoxStateDiag.Location = new Point(x, y);
+        }
+
+        // Dynamically Resizing the PictureBoxStateDiag
+        private void resizePictureBoxStateDiag()
+        {
+            
+            double y = (double)(this.ClientSize.Height * .9);
+            double x = y * 1.5;
+
+            pictureBoxStateDiag.Size = new Size((int)x, (int)y);
+        }
 
         private void ApplyAnimationForState(State state)
         {
@@ -129,6 +145,14 @@ namespace PixelAnimationDFA
             }
         }
 
+        bool isVisible = true;
+        private void ShowHidePanels(bool visible)
+        {
+            panelKeyBoardLayout.Visible = visible;
+            pictureBoxKnight.Visible = visible;
+            pictureBoxStateDiag.Visible = !visible;
+        }
+
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.D0) Application.Exit();
@@ -142,10 +166,21 @@ namespace PixelAnimationDFA
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
+
+
             if (keyUpInputMap.TryGetValue(e.KeyCode, out Input input))
             {
                 labelInput.Text = $"Input: Release {e.KeyCode}";
                 stateMachine.ApplyInput(input);
+            }
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '9')
+            {
+                ShowHidePanels(isVisible);
+                isVisible = !isVisible;
             }
         }
     }

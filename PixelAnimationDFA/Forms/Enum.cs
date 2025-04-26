@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace PixelAnimationDFA
 {
     public enum State

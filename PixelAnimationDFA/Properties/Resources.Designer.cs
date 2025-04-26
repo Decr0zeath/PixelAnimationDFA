@@ -193,26 +193,6 @@ namespace PixelAnimationDFA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Background_image1 {
-            get {
-                object obj = ResourceManager.GetObject("Background image1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Gothic_Ruins_in_Overgrown_Landscape {
-            get {
-                object obj = ResourceManager.GetObject("Gothic Ruins in Overgrown Landscape", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap keyboard_layout {
             get {
                 object obj = ResourceManager.GetObject("keyboard layout", resourceCulture);
@@ -226,6 +206,16 @@ namespace PixelAnimationDFA.Properties {
         internal static System.Drawing.Bitmap keyboard_layout_orange {
             get {
                 object obj = ResourceManager.GetObject("keyboard layout_orange", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NFA___State_Diagram__Light_Mode_ {
+            get {
+                object obj = ResourceManager.GetObject("NFA - State Diagram (Light Mode)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
