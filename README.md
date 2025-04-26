@@ -29,7 +29,7 @@ An interactive experience combining **game development** and **theory of computa
 ![Knight Animation Preview](assets/knight-preview.gif)
 
 ### State Diagram View
-![State Diagram Preview](PixelAnimationDFA/Assets/PixelAssets/state-diagram-light.png)
+![State Diagram Preview](PixelAnimationDFA/Assets/PixelAssets/state-diagram-lightmode.png)
 
 > *IdleRight is the start state*
 
