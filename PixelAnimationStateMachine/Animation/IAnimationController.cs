@@ -1,4 +1,4 @@
-﻿namespace PixelAnimationDFA
+﻿namespace PixelAnimationStateMachine
 {
     public interface IAnimationController
     {

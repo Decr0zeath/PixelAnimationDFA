@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System;
 
-namespace PixelAnimationDFA
+namespace PixelAnimationStateMachine
 {
     public partial class Form1 : Form
     {

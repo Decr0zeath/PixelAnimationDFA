@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PixelAnimationDFA
+namespace PixelAnimationStateMachine
 {
     public class StateMachine : IStateMachine
     {

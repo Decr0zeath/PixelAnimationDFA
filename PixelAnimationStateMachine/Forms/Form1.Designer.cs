@@ -1,4 +1,4 @@
-﻿namespace PixelAnimationDFA
+﻿namespace PixelAnimationStateMachine
 {
     partial class Form1
     {
@@ -263,7 +263,7 @@
             // pictureBoxStateDiag
             // 
             this.pictureBoxStateDiag.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxStateDiag.Image = global::PixelAnimationDFA.Properties.Resources.state_diagram_lightmode;
+            this.pictureBoxStateDiag.Image = global::PixelAnimationStateMachine.Properties.Resources.state_diagram_lightmode;
             this.pictureBoxStateDiag.Location = new System.Drawing.Point(166, 87);
             this.pictureBoxStateDiag.Name = "pictureBoxStateDiag";
             this.pictureBoxStateDiag.Size = new System.Drawing.Size(573, 381);

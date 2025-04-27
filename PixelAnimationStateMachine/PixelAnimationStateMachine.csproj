@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{01EE59BA-52D9-4610-86CF-E3BD1B856B51}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>PixelAnimationDFA</RootNamespace>
-    <AssemblyName>PixelAnimationDFA</AssemblyName>
+    <RootNamespace>PixelAnimationStateMachine</RootNamespace>
+    <AssemblyName>PixelAnimationStateMachine</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

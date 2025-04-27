@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PixelAnimationDFA.Properties
+namespace PixelAnimationStateMachine.Properties
 {
 
 

@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace PixelAnimationDFA
+namespace PixelAnimationStateMachine
 {
     internal class AnimateKnight
     {

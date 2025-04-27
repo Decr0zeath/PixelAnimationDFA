@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace PixelAnimationDFA
+namespace PixelAnimationStateMachine
 {
     internal static class Program
     {

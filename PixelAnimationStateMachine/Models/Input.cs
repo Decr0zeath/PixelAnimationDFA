@@ -1,5 +1,5 @@
 ﻿
-namespace PixelAnimationDFA
+namespace PixelAnimationStateMachine
 {
     public enum Input
     {
