@@ -107,9 +107,7 @@ This project is available **for educational purposes only**.
 
 ## 📦 Releases
 
-- 🔖 **[Download Latest Release](#)**
-
-> *(Coming Soon)*
+- 🔖 **[Download Latest Release](https://github.com/Decr0zeath/PixelAnimationStateMachine/releases/tag/0.1.0)**
 
 ---
 
