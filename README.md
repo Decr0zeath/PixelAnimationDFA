@@ -15,9 +15,9 @@ An interactive experience combining **game development** and **theory of computa
 ## ✨ Features
 
 - **Smooth Knight Animations:** Idle, Running, Crouching, Rolling, Attacking
-- **DFA-Based State Machine:** Transitions controlled strictly by DFA logic
+- **NFA-Based State Machine:** Transitions controlled strictly by NFA logic
 - **Responsive UI:** Scales across different screen sizes
-- **Toggle Visualization:** Knight animation ↔ DFA State Diagram
+- **Toggle Visualization:** Knight animation ↔ State Diagram
 - **Modular Architecture:** Clean code structure for easy maintenance and expansion
 
 ---
@@ -25,10 +25,10 @@ An interactive experience combining **game development** and **theory of computa
 ## 📸 Preview
 
 ### Knight Animation
-![Knight Animation Preview](PixelAnimationDFA/Assets/PixelAssets/knight-animation-preview.gif)
+![Knight Animation Preview](PixelAnimationStateMachine/Assets/PixelAssets/knight-animation-preview.gif)
 
 ### State Diagram View
-![State Diagram Preview](PixelAnimationDFA/Assets/PixelAssets/state-diagram-dark.png)
+![State Diagram Preview](PixelAnimationStateMachine/Assets/PixelAssets/state-diagram-dark.png)
 
 > *IdleRight is the start state*
 
@@ -37,7 +37,7 @@ An interactive experience combining **game development** and **theory of computa
 ## 📂 Project Structure
 
 ```
-PixelAnimationDFA/
+PixelAnimationStateMachine/
 ├── Animations/
 │   ├── AnimateKnight.cs             # Knight frame animations
 │   ├── IAnimationController.cs      # Animation controller interface
@@ -52,7 +52,7 @@ PixelAnimationDFA/
 │   └── State.cs                      # Knight states enumeration
 ├── StateMachine/
 │   ├── IStateMachine.cs              # State machine interface
-│   └── StateMachine.cs               # DFA state management
+│   └── StateMachine.cs               # State management
 ├── Assets/                           # Sprites, diagrams, and resources
 └── Program.cs                        # Application entry point
 ```
@@ -71,7 +71,7 @@ PixelAnimationDFA/
 1. **Download** the latest release from the [Releases](#releases) section.
 2. **Unzip** the downloaded file.
 3. **Open** the `Release/` folder.
-4. **Launch** `PixelAnimationDFA.exe`.
+4. **Launch** `PixelAnimationStateMachine.exe`.
 
 ✅ No installation needed — just launch and enjoy!
 
