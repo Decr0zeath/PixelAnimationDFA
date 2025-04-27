@@ -86,15 +86,15 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Pixel Knight Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Pixel Knight Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(86)))), ((int)(((byte)(2)))));
-            this.label1.Location = new System.Drawing.Point(290, 0);
+            this.label1.Location = new System.Drawing.Point(332, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 112);
+            this.label1.Size = new System.Drawing.Size(171, 128);
             this.label1.TabIndex = 2;
-            this.label1.Text = "A - Move Left\r\nD - Move Right\r\nC - Crouch\r\nZ - Stand\r\nV - Attack\r\nSpace - Roll\r\n0" +
-    " - Exit";
+            this.label1.Text = "A - Move Left\r\nD - Move Right\r\nC - Crouch\r\nZ - Stand\r\nV - Attack\r\nSpace - Roll\r\n9" +
+    " - State Diagram\r\n0 - Exit";
             // 
             // pictureBox1
             // 
@@ -103,7 +103,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(2, 2);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(268, 106);
+            this.pictureBox1.Size = new System.Drawing.Size(310, 123);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -127,7 +127,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.labelCurrState);
             this.panel1.Controls.Add(this.labelInput);
-            this.panel1.Location = new System.Drawing.Point(63, 2);
+            this.panel1.Location = new System.Drawing.Point(26, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(302, 106);
@@ -202,7 +202,7 @@
             this.panelKeyBoardLayout.Location = new System.Drawing.Point(0, 8);
             this.panelKeyBoardLayout.Margin = new System.Windows.Forms.Padding(2);
             this.panelKeyBoardLayout.Name = "panelKeyBoardLayout";
-            this.panelKeyBoardLayout.Size = new System.Drawing.Size(886, 119);
+            this.panelKeyBoardLayout.Size = new System.Drawing.Size(886, 276);
             this.panelKeyBoardLayout.TabIndex = 10;
             // 
             // flowLayoutPanel2
@@ -211,10 +211,10 @@
             this.flowLayoutPanel2.Controls.Add(this.panel1);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(507, 0);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(544, 0);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(367, 119);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(330, 276);
             this.flowLayoutPanel2.TabIndex = 13;
             // 
             // panel8
@@ -224,7 +224,7 @@
             this.panel8.Location = new System.Drawing.Point(874, 0);
             this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(12, 119);
+            this.panel8.Size = new System.Drawing.Size(12, 276);
             this.panel8.TabIndex = 12;
             // 
             // flowLayoutPanel1
@@ -237,17 +237,17 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(447, 119);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(513, 276);
             this.flowLayoutPanel1.TabIndex = 11;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel7.Location = new System.Drawing.Point(274, 2);
+            this.panel7.Location = new System.Drawing.Point(316, 2);
             this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(12, 108);
+            this.panel7.Size = new System.Drawing.Size(12, 124);
             this.panel7.TabIndex = 12;
             // 
             // panel6
@@ -257,7 +257,7 @@
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(12, 119);
+            this.panel6.Size = new System.Drawing.Size(12, 276);
             this.panel6.TabIndex = 11;
             // 
             // pictureBoxStateDiag

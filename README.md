@@ -55,8 +55,7 @@ PixelAnimationDFA/
 │   ├── IStateMachine.cs              # State machine interface
 │   └── StateMachine.cs               # DFA state management
 ├── Assets/                           # Sprites, diagrams, and resources
-├── Program.cs                        # Application entry point
-└── README.md                         # This documentation
+└── Program.cs                        # Application entry point
 ```
 
 ---
@@ -96,7 +95,7 @@ PixelAnimationDFA/
 
 ## 📖 Technical Insights
 
-This project implements a **Deterministic Finite Automaton (DFA)** model to govern the knight’s state transitions based on player input.  
+This project implements **State Machines** model to govern the knight’s state transitions based on player input.  
 Each input event triggers a transition, keeping behavior **predictable, structured, and mathematically sound** — mirroring real-world finite automaton behavior used in AI, language parsing, and embedded systems.
 
 ---
@@ -105,22 +104,24 @@ Each input event triggers a transition, keeping behavior **predictable, structur
 
 This project is available **for educational purposes only**.
 
-See [License](#license) for more details.
-
 ---
 
 ## 📦 Releases
 
 - 🔖 **[Download Latest Release](#)**
 
-> *(Coming Soon: If you upload to GitHub, you can update this with the actual link.)*
+> *(Coming Soon)*
 
 ---
 
 ## 🤝 Acknowledgements
 
-- Pixel Art Inspirations (If applicable — insert credit)
+- [aamatniekss](https://aamatniekss.itch.io/) for the [Fantasy Knight - Free Pixelart Animated Character](https://aamatniekss.itch.io/fantasy-knight-free-pixelart-animated-character) 
+- [Pixel Knight Gothic](https://fontstruct.com/fontstructions/show/707633/pixel_knight_gothic) font by [bluellama](https://fontstruct.com/fontstructors/162682/bleullama)
+- [Dr. Cherry Lyn Sta Romana](https://ph.linkedin.com/in/cherry-lyn-sta-romana-585975113), for making me deeply understand State Machines
+- [xPheRe](https://xphere.itch.io/pixel-keyboard-layout) for the Pixel Keyboard layout
 - Open-source community for tools and libraries
+- ChatGPT for code refactoring and analysis!
 
 ---
 
