@@ -1,7 +1,7 @@
 
 # Pixel Animation using State Machines ⚔️🛡
 
-[![Made with C#](https://img.shields.io/badge/Made%20with-C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)](https://learn.microsoft.com/en-us/dotnet/csharp/)
+[![Made with C# WinForms](https://img.shields.io/badge/Made%20with-C%23%20WinForms-239120?style=for-the-badge&logo=c-sharp&logoColor=white)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 [![Platform](https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/en-us/windows)
 [![License: Educational](https://img.shields.io/badge/License-Educational-lightgrey?style=for-the-badge)](#license)
 ![StateMachine Simulation](https://img.shields.io/badge/StateMachine-Simulation-%23FFA500?style=for-the-badge)
