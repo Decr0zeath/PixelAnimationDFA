@@ -160,5 +160,8 @@
   <ItemGroup>
     <None Include="Assets\PixelAssets\state-diagram-lightmode.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\PixelAssets\keyboard layout_orange.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
