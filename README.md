@@ -3,7 +3,7 @@
 
 [![Made with C# WinForms](https://img.shields.io/badge/Made%20with-C%23%20WinForms-239120?style=for-the-badge&logo=c-sharp&logoColor=white)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 [![Platform](https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/en-us/windows)
-![StateMachine Simulation](https://img.shields.io/badge/StateMachine-Simulation-%23FFA500?style=for-the-badge)
+![Made by Violdan E. Bayocot](https://img.shields.io/badge/Made%20by-Violdan%20E.%20Bayocot-%23FFA500?style=for-the-badge)
 
 ---
 
